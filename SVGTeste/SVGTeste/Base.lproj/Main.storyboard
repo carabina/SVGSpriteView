@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="krk-ze-JmG">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Bse-ZY-GOY">
+            <objects>
+                <viewController id="BVM-2m-cTN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m00-kF-6Ud"/>
+                        <viewControllerLayoutGuide type="bottom" id="YYk-qE-jGE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="770-8F-Oke">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFT-gx-Xw2">
+                                <rect key="frame" x="16" y="72" width="568" height="37"/>
+                                <color key="backgroundColor" red="0.9497286933827076" green="0.94743963944175569" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="SVG Oulet references">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="0lm-R6-vn6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBR-NQ-RZI">
+                                <rect key="frame" x="16" y="117" width="568" height="37"/>
+                                <color key="backgroundColor" red="0.9497286933827076" green="0.94743963944175569" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="SVG add Runtime">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1TN-fd-iAW" kind="show" id="oL7-5F-lkM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8o-Sv-VPQ">
+                                <rect key="frame" x="16" y="162" width="568" height="37"/>
+                                <color key="backgroundColor" red="0.94972869339999999" green="0.94743963939999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="SVG URL sprite file">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cZG-QE-FSg" kind="show" id="fCS-m6-wu3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Kis-IE-6eG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5VL-wR-PM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="607"/>
+        </scene>
+        <!--View Controller Outlet References-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="vXZ-lx-hvc" customClass="ViewControllerOutletReferences" customModule="SVGTeste" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vbX-BT-LuC" customClass="SVGSpriteView" customModule="SVGTeste" customModuleProvider="target">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="MYV-hG-51g"/>
+                                    <constraint firstAttribute="width" constant="200" id="awE-Ae-qFM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36921940315189983" green="0.55632904716043563" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="vbX-BT-LuC" secondAttribute="centerY" id="m3N-kf-uiV"/>
+                            <constraint firstAttribute="centerX" secondItem="vbX-BT-LuC" secondAttribute="centerX" id="nOz-pL-Gv7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="25n-oH-kdd"/>
+                    <connections>
+                        <outlet property="imageView" destination="vbX-BT-LuC" id="uJu-62-INI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2394" y="-463"/>
+        </scene>
+        <!--View Controller Runtime Add Sub View-->
+        <scene sceneID="YOL-BR-19A">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="1TN-fd-iAW" customClass="ViewControllerRuntimeAddSubView" customModule="SVGTeste" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OQw-Fk-Njv"/>
+                        <viewControllerLayoutGuide type="bottom" id="eMJ-aa-eKL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WEL-kB-3ai">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dTX-qE-Skg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2394" y="244"/>
+        </scene>
+        <!--View ControllerURL Sprite File-->
+        <scene sceneID="Fjh-eA-bAh">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="cZG-QE-FSg" customClass="ViewControllerURLSpriteFile" customModule="SVGTeste" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sf3-zk-Dm0"/>
+                        <viewControllerLayoutGuide type="bottom" id="rq8-5p-xob"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s9A-1m-k8C">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bf9-t3-RCx" customClass="SVGSpriteView" customModule="SVGTeste" customModuleProvider="target">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="bYa-Qs-BOU"/>
+                                    <constraint firstAttribute="width" constant="300" id="gnW-tx-OcO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Bf9-t3-RCx" secondAttribute="centerY" id="Vb0-1X-V4M"/>
+                            <constraint firstAttribute="centerX" secondItem="Bf9-t3-RCx" secondAttribute="centerX" id="btb-Q2-fEM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Bf9-t3-RCx" id="MqJ-NE-Rod"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEM-gn-Vaz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2394" y="975"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Yt-Bd-tSm">
+            <objects>
+                <navigationController id="krk-ze-JmG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nrd-UG-vJD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BVM-2m-cTN" kind="relationship" relationship="rootViewController" id="1bb-jA-krV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n7B-pl-9qS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="607"/>
+        </scene>
+    </scenes>
+</document>
